@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.1",
+    "@chakra-ui/styled-system": "^2.3.1",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "chakra-ui-steps": "^1.7.4",
+    "framer-motion": "^6.5.1",
+    "json-server": "^0.17.0",
+    "webpack": "^5.74.0"
+  }
+}

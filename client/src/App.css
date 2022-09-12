@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+
+}
+
+input{
+  border: 2px solid black;
+}
+body{
+  background-color: #DDD5F5;
+}
+
+.leaflet-container {
+  width:50vw;
+  height:50vh;
+}
+
+.inputCantidadProducto{
+  margin-top:50px;
+}
+
+.imgLogin{
+  margin-top:100px;
+  border-radius:20px;
+}
+
+.containerSearchBarH2yPaginado{
+  display:flex;
+  width:100%;
+  background-color:red;
+  min-height:250px;
+}
+
+.contenedor{
+  background-color:red;
+}
+
+.agregar{
+  border: 1px solid #d0d0d0;
+}
+
+.modificar{
+  border: 1px solid #d0d0d0;
+}
+.quitar{
+  border: 1px solid #d0d0d0;
+}
+.cancelar{
+  border: 1px solid #d0d0d0;
+}
+.aceptar{
+  border: 1px solid #d0d0d0;
+}
+
+.containerSearchBar{
+  background-color:#004AAD;
+  border-radius: 0px 0px 45px 0px;
+}
+
+
+
+ul:hover{
+  cursor:pointer;
+}
+
+.navPages{
+
+  display:flex;
+  justify-content:center;
+  align-content:center;
+}
+
+.pagination{
+  display:flex;
+  align-items:center;
+}
+
+.searchBuscar{
+  margin-left:200px;
+}
+
+.logoToHome{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+ }
+ .logoToHome:hover{
+  color:#004AAD;
+  background-color:yellow
+ }
+
+.containerCards{
+  background-color:red;
+  display:flex;
+}
+
+
+.padreDeCards{
+  gap:20px;
+ display:flex;
+ width: 1200px;
+ margin-left:0px;
+ margin-top:50px;
+ flex-wrap: wrap;
+ justify-content: center;
+     text-decoration: none;
+
+}
+
+
+.padreDeCards > fragment {
+  width: 280px;
+
+  text-align: center;
+       
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+Estilos Importación
+ */
+
+
+ .btnGuardarProductos{
+  margin-top:30px;
+  color:white;
+ }
+ .btnGuardarProductos:hover{
+  color:#004AAD;
+  background-color:yellow
+ }
+
+                                    /* Estilos tabla: */
+
+.cabecera{
+  display:flex;
+}
+.cabeceraCodigoProducto{
+  position:absolute;
+  margin-left:0px;
+}
+
+/* Estilos de los atributos en la cabeceera*/
+.cabeceraNombre{
+  position:absolute;
+  margin-left:200px;
+}
+
+.cabeceraPrecioDistribuidor{
+  position:absolute;
+  margin-left:500px;
+}
+
+  
+.cabeceraDescuentoDistribuidor{
+  position:absolute;
+  margin-left:700px;
+}
+
+.cabeceraCostoCuellar{
+  position:absolute;
+  margin-left:900px;
+}
+
+.cabeceraTotalConPorcentaje{
+  position:absolute;
+  margin-left:1100px;
+}
+
+
+.cabeceraPorcentaje{
+  position:absolute;
+  margin-left:1300px;
+}
+
+.cabeceraEstado{
+  position:absolute;
+  margin-left:1500px;
+}
+
+/* Fin estios atributos en la cabeceera*/
+.contenedorProductos{
+  display:flex;
+  flex-direction:column;
+  margin-top:15px;
+
+}
+
+
+
+
+.contenedorProductosInMap{
+  position:relative;
+  margin-top:150px;
+  border-color: gray;
+  border-width: 2px;
+  width:1600px;
+
+}
+
+
+
+
+/* Estilos Producto por producto*/
+
+
+/* <div class="productoCodigoProducto">1</div>
+<div class="productoNombre">2</div>
+<div class="productoPrecioDistribuidor">3</div>
+<div class="productoDescuentoDistribuidor">4</div>
+<div class="productoCostoCuellar">texto breve</div>
+<div class="productoTotalConPorcentaje">5</div>
+<div class="productoPorcentaje">6</div>
+
+
+productoSkuCodigoProducto */
+.productoCodigoProducto{
+  position:absolute;
+  margin-left:0px;
+}
+
+.productoNombre{
+  position:absolute;
+  margin-left:200px;
+  width:300px;
+}
+
+.productoPrecioDistribuidor{
+  position:absolute;
+  margin-left:500px;
+}
+
+.productoDescuentoDistribuidor{
+  position:absolute;
+  margin-left:700px;
+}
+
+.productoCostoCuellar{
+  position:absolute;
+  margin-left:900px;
+}
+
+.productoTotalConPorcentaje{
+  position:absolute;
+  margin-left:1100px;
+}
+
+
+
+.productoPorcentaje{
+  position:absolute;
+  margin-left:1300px;
+}
+
+
+.productoEstado{
+  position:absolute;
+  margin-left:1500px;
+}

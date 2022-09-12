@@ -1,0 +1,61 @@
+
+
+.divBuscar{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    margin-right:0px;
+    margin-left:0px;
+    padding-top:10px;
+
+
+}
+
+
+
+.buscarClase{
+    width:250px;
+    height: 42px;
+    margin-top:20px;
+    border:2px solid rgba(0,0,0,0.2);
+border-radius: 12px;
+font-family:ericma;
+text-decoration: none;
+font-weight: bold;
+border-style: solid;
+font-size: 1em;
+color: #004AAD;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.botonBuscar{
+    padding:0px;
+    margin-top: 20px;
+    margin-left:0px;
+    width: 258px;
+    height: 50px;
+  cursor: pointer;
+  background-color: white;     
+  position:relative;
+  display:inline-block;
+  padding:0px;
+  border-color: #2a2a2a;
+  border-radius: 15px;
+  font-family:ericma;
+  color: #004AAD;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-style: solid;
+  font-family: 'Montserrat', sans-serif;
+   }
+   /* background-color: */
+   .botonBuscar:hover{
+    background-color: yellow;  
+   }
+
+.labelBuscarProductos{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+  }
