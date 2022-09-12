@@ -28,12 +28,12 @@
     "nodemailer": "^6.7.7",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5",
-    "stripe": "^10.0.0"
+    "stripe": "^10.0.0",
+    "nodemon": "^2.0.19"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
-    "nodemon": "^2.0.19",
     "supertest": "^6.0.1",
     "supertest-session": "^4.1.0"
   }
