@@ -135,7 +135,7 @@ for (let i=0; i<l; i++){
 		const file = e.target.files[0];
 		readExcel(file);
 		}} />
-    <button class="btnGuardarProductos" onClick={() => guardar()}>Guardar productossss</button>
+    <button class="btnGuardarProductos" onClick={() => guardar()}>Guardar productos</button>
     <button class="btnGuardarProductos" onClick={() => cancelar()}>Cancelar</button>
 
 
