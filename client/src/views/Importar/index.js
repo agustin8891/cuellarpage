@@ -76,14 +76,34 @@ export default function Importar({ userlog }) {
       dispatch(guardarProductos(objetoProducto));
     } */
   /*   console.log(JSON.stringify(object)); */
-  let items2=[]
+/*   let items2=[]
   let items3=[]
   let items4=[]
   let items5=[]
-  let items6=[]
+  let items6=[] */
 
 
-    for(let i=1; i<20; i++) {
+  let arregloPaquetes=[]
+var k=0
+var l=Math.trunc(items.length/20)+1
+for (let i=0; i<l; i++){
+	let arregloPaquetes=[]
+	if(i===Math.trunc(items.length/20)) {
+		for (let j=k; j<items.length; j++){
+			arregloPaquetes.push(items[j])
+			k++
+		}
+	} else {
+		for (let a=0; a<k; a++){
+			arregloPaquetes.push(items[a])
+			k++
+		}
+	}
+  dispatch(guardarProductos(arregloPaquetes))
+}
+
+    /* console.log(math.trunc(20)) */
+/*     for(let i=1; i<20; i++) {
       items2.push(items[i])
     }
     dispatch(guardarProductos(items2));
@@ -102,7 +122,7 @@ export default function Importar({ userlog }) {
     for(let i=80; i<100; i++) {
         items6.push(items[i])
     }
-    dispatch(guardarProductos(items6));
+    dispatch(guardarProductos(items6)); */
 
 
     /* dispatch(guardarProductos(items)); */

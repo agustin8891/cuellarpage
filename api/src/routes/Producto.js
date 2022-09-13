@@ -66,14 +66,6 @@ router.post('/', async (req,res) => {
 // de aca para abajo
 
 	let arrayProductos=req.body
-	console.log(arrayProductos[0].codigoproducto)
-	console.log(arrayProductos[0].Nombre)
-	console.log(arrayProductos[0]['PRECIO DISTRIBUIDOR'])
-	console.log(arrayProductos[0]['Desc distribuidor'])
-	console.log(arrayProductos[0]['Costo CUELLAR'])
-	console.log(arrayProductos[0]['Total con porcentaje'])
-	console.log(arrayProductos[0].PORCENTAJE)
-	console.log(arrayProductos[0].imagen)
 	for(let i=0; i<arrayProductos.length; i++) {
 		let productoBuscado = await Producto.findByPk(arrayProductos[i].id);
 		let id=arrayProductos[i].codigoproducto
