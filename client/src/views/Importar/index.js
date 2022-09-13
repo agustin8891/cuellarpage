@@ -76,7 +76,36 @@ export default function Importar({ userlog }) {
       dispatch(guardarProductos(objetoProducto));
     } */
   /*   console.log(JSON.stringify(object)); */
-    dispatch(guardarProductos(items));
+  let items2=[]
+  let items3=[]
+  let items4=[]
+  let items5=[]
+  let items6=[]
+
+
+    for(let i=1; i<20; i++) {
+      items2.push(items[i])
+    }
+    dispatch(guardarProductos(items2));
+    for(let i=20; i<40; i++) {
+        items3.push(items[i])
+    }
+    dispatch(guardarProductos(items3));
+    for(let i=40; i<60; i++) {
+        items4.push(items[i])
+    }
+    dispatch(guardarProductos(items4));
+    for(let i=60; i<80; i++) {
+        items5.push(items[i])
+    }
+    dispatch(guardarProductos(items5));
+    for(let i=80; i<100; i++) {
+        items6.push(items[i])
+    }
+    dispatch(guardarProductos(items6));
+
+
+    /* dispatch(guardarProductos(items)); */
 /*     swal({
       title: "Archivo cargado",
       icon: "success",
@@ -110,7 +139,7 @@ export default function Importar({ userlog }) {
 		const file = e.target.files[0];
 		readExcel(file);
 		}} />
-    <button class="btnGuardarProductos" onClick={() => guardar()}>Guardar productos</button>
+    <button class="btnGuardarProductos" onClick={() => guardar()}>Guardar productossss</button>
     <button class="btnGuardarProductos" onClick={() => cancelar()}>Cancelar</button>
 
 
