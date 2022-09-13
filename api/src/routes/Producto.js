@@ -62,7 +62,61 @@ router.get('/', async (req,res) => {
 
 
 router.post('/', async (req,res) => {
-	let {
+
+// de aca para abajo
+
+	let arrayProductos=req.body
+	console.log(arrayProductos[0].codigoproducto)
+	console.log(arrayProductos[0].Nombre)
+	console.log(arrayProductos[0]['PRECIO DISTRIBUIDOR'])
+	console.log(arrayProductos[0]['Desc distribuidor'])
+	console.log(arrayProductos[0]['Costo CUELLAR'])
+	console.log(arrayProductos[0]['Total con porcentaje'])
+	console.log(arrayProductos[0].PORCENTAJE)
+	console.log(arrayProductos[0].imagen)
+	for(let i=0; i<arrayProductos.length; i++) {
+		let productoBuscado = await Producto.findByPk(arrayProductos[i].id);
+		let id=arrayProductos[i].codigoproducto
+		let nombre=arrayProductos[i].Nombre
+		let preciodistribuidor=arrayProductos[i]['PRECIO DISTRIBUIDOR']
+		let descdistribuidor=arrayProductos[i]['Desc distribuidor']
+		let costocuellar=arrayProductos[i]['Costo CUELLAR']
+		let totalconporcentaje=arrayProductos[i]['Total con porcentaje']
+		let porcentaje=arrayProductos[0].PORCENTAJE
+		let image=arrayProductos[i].imagen
+
+		if (productoBuscado === null) {	
+		  let productoCreado = await Producto.create({
+			id,
+			nombre,
+			preciodistribuidor,
+			descdistribuidor,
+			costocuellar,
+			totalconporcentaje,
+			porcentaje,
+			image
+		}) 
+		} else {
+		  productoBuscado.nombre=arrayProductos[i].nombre
+		  productoBuscado.preciodistribuidor=arrayProductos[i].preciodistribuidor,
+		  productoBuscado.descdistribuidor=arrayProductos[i].descdistribuidor,
+		  productoBuscado.costocuellar=arrayProductos[i].costocuellar,
+		  productoBuscado.totalconporcentaje=arrayProductos[i].totalconporcentaje,
+		  productoBuscado.porcentaje=arrayProductos[i].porcentaje,
+		  productoBuscado.image=arrayProductos[i].image
+	
+				if(productoBuscado) await productoBuscado.save()
+			}  
+
+	
+	}
+
+	
+///de aca para arriba
+
+
+
+/* 	let {
         id,
         nombre,
         preciodistribuidor,
@@ -98,7 +152,9 @@ router.post('/', async (req,res) => {
 
 			if(productoBuscado) await productoBuscado.save()
 		}  
-	res.send('Productos creados o actualizados')
+	res.send('Productos creados o actualizados') */
+
+		res.send("post")
 })
 
 router.delete('/', async (req,res) => {

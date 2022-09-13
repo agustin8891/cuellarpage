@@ -61,7 +61,9 @@ export default function Importar({ userlog }) {
 
   console.log(items)
   const guardar = () => {
-    for(let i=0; i<items.length; i++) {
+
+   /*  console.log(object) */
+/*     for(let i=0; i<items.length; i++) {
       let objetoProducto={}
       objetoProducto.id=items[i].codigoproducto
       objetoProducto.nombre=items[i].Nombre
@@ -72,16 +74,17 @@ export default function Importar({ userlog }) {
       objetoProducto.porcentaje=items[i].PORCENTAJE
       objetoProducto.image=items[i].imagen
       dispatch(guardarProductos(objetoProducto));
-    }
-
-    swal({
+    } */
+  /*   console.log(JSON.stringify(object)); */
+    dispatch(guardarProductos(items));
+/*     swal({
       title: "Archivo cargado",
       icon: "success",
-    })
+    }) */
 
-    setTimeout(function(){
+/*     setTimeout(function(){
       window.location.reload()
-  }, 2000);
+  }, 2000); */
   
   };
 
