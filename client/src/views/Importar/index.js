@@ -102,38 +102,14 @@ for (let i=0; i<l; i++){
   dispatch(guardarProductos(arregloPaquetes))
 }
 
-    /* console.log(math.trunc(20)) */
-/*     for(let i=1; i<20; i++) {
-      items2.push(items[i])
-    }
-    dispatch(guardarProductos(items2));
-    for(let i=20; i<40; i++) {
-        items3.push(items[i])
-    }
-    dispatch(guardarProductos(items3));
-    for(let i=40; i<60; i++) {
-        items4.push(items[i])
-    }
-    dispatch(guardarProductos(items4));
-    for(let i=60; i<80; i++) {
-        items5.push(items[i])
-    }
-    dispatch(guardarProductos(items5));
-    for(let i=80; i<100; i++) {
-        items6.push(items[i])
-    }
-    dispatch(guardarProductos(items6)); */
-
-
-    /* dispatch(guardarProductos(items)); */
-/*     swal({
+    swal({
       title: "Archivo cargado",
       icon: "success",
-    }) */
+    })
 
-/*     setTimeout(function(){
+    setTimeout(function(){
       window.location.reload()
-  }, 2000); */
+  }, 2000);
   
   };
 
